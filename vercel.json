@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "src/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "env": {
+      "REACT_APP_LIVEKIT_SERVER_URL": "wss://firstvideocall-ivnzfs87.livekit.cloud",
+      "REACT_APP_TOKEN_SERVICE_URL": "https://videocall-iouosjirh-noobcoders-projects-f50e1597.vercel.app "
+    }
+  }
